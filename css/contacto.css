@@ -1,0 +1,202 @@
+:root{
+    --headerColor: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: #f7f9fd;
+}
+
+.container{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* ============================= HEADER - INICIO ===================================== */
+
+.header{
+    width: 100%;
+    height: 70px;
+    background-color:  var(--headerColor);
+    color: #e3e4eb;
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        height: 100px ; 
+    }
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+
+@media screen  and  (max-width: 480px) {
+
+    .header__container{
+        height: 120px;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+}
+
+@media screen  and  (min-width: 480px) and  (max-width: 768px) {
+
+    .header__container{
+        height: 100px;
+    }
+}
+
+/* (((()))) LOGOTIPO - INICIO (((()))) */
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo:visited{
+    color: rgb(255, 255, 255);
+}
+
+.logo__img{
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+@media screen and (min-width: 480px) and  (max-width: 768px) {
+
+    .logo__img{
+        height: 60px;
+    }
+}
+
+/* (((()))) LOGOTIPO - FIN (((()))) */
+
+/* (((()))) NAVEGACION - INICIO (((()))) */
+
+.nav__links{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__links{
+        width: 100%;
+    }
+}
+
+.nav__link{
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.nav__link:hover{
+    text-decoration: none;
+}
+
+.nav__link:visited{
+    color: #e3e4eb;
+}
+
+
+/* (((()))) LOGOTIPO - FIN (((()))) */
+
+/* ============================= HEADER - FIN ===================================== */
+
+
+/* ============================= MAIN - INICIO ===================================== */
+
+/* ============================= MAIN - FIN ===================================== */
+
+/* ============================= MAPA - INICIO ===================================== */
+.location {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .location__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--headerColor);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .location__map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+/* ============================= MAPA - FIN ===================================== */
+
+/* ============================= FORM - INICIO ===================================== */
+
+/* ESTA REALIZADO EN BOOTSTRAP EN EL HTML, SALVO LA MODIFICACION DE BOTON DE ABAJO */
+
+@media screen and  (min-width: 900px) {
+    .btn.w-100 {
+        width: 60% !important;
+    }
+}
+
+/* ============================= FORM - FIN ===================================== */
+
+/* ============================= FOOTER - INICIO ===================================== */
+
+.footer{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    background-color: var(--headerColor);
+
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__img{
+    height: 100px;
+    margin-bottom: 5px;
+    border-radius: 50px;
+}
+
+.footer__svg{
+    stroke: rgb(113, 109, 109);
+}
+
+.footer__svg:hover{
+    stroke: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* ============================= FOOTER - FIN ===================================== */

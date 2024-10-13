@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/icono.png">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://kit.fontawesome.com/e6b89d61c4.js" crossorigin="anonymous"></script>
+    <title>Ático-Dev Contactanos</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/icono.png" alt="logo de la empresa">
+            <h1 class="empresa">ÁTICO-DEV</h1>
+        </a>
+
+        <nav>
+            <a href="nosotros.html" class="nav-link">Nosotros</a>
+            <a href="contactanos.html" class="nav-link-enlace">Contactanos</a>
+            <a href="registro.html" class="nav-link">Registro de usuarios</a>
+        </nav>
+    </header><br>
+    <menu><br>
+        <table>
+            <h3 class="titulo-ubicacion">Nuestra sucursal!</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.275055984831!2d-58.61349990000001!3d-34.7738503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc5fce4b1d9fb%3A0xe701c3b6acbd254!2sCentro%20Comercial%20Villa%20Dorrego!5e0!3m2!1ses-419!2sar!4v1714197041024!5m2!1ses-419!2sar"
+                width="400" height="400" style="border:0; padding: 10px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3 class="envia-consulta">Envia tu consulta </h3><br>
+            <form class="registro" action="show_data.html">
+                <label> Nombre:</label> <input size="30" name="nombre" required="" type="text" class="consulta-text"
+                    placeholder="ingrese su nombre...">
+                <label> Apellido:</label> <input size="30" name="apellido" type="text" class="consulta-text"
+                    placeholder="ingrese su apellido...">
+                <br><br>
+                <label> E-mail:</label> <input size="30" name="email" required="" type="email" class="consulta-text"
+                    placeholder="ingrese su E-mail...">
+                <label> Telefono:</label> <input size="30" name="telefono" required="" type="text" class="consulta-text"
+                    placeholder="ingrese su telefono...">
+                <br><br>
+                <label > Consulta:</label> <br> <textarea class="consulta-text-2" rows="5" cols="100px" name="consulta" required=""
+                    type="textarea" placeholder="Envia tu consulta estamos para ayudarte!..."></textarea>
+                <div class="botones">
+                    <input type="checkbox" name="captcha" required="" value="No soy un robot!"> Haz click para
+                    demostrar que no
+                    eres un
+                    robot. <br>
+                    <div class="botones">
+                    <input type="submit" value="Enviar formulario" class="boton-formulario"> <br>
+                    <button type="reset" class="boton-formulario">Reset formulario</button>
+                    </div>
+                </div>
+            </form><br>
+        </table>
+    </menu><br>
+    <footer>
+        <div class="redes"><br>
+            <a href="https://www.facebook.com/" target="_blank" title="Facebook"><i
+                    class="fa-brands fa-square-facebook"></i></a>
+            <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/atico_dev/" target="_blank" title="Instagram"><i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div id="copyright">
+            <p>Derechos reservados @Atico-Dev 2022</p>
+        </div>
+    </footer>
+</body>
+
+</html>

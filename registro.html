@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="images/icono.png">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://kit.fontawesome.com/e6b89d61c4.js" crossorigin="anonymous"></script>
+  <title>Ático-Dev Registro</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="images/icono.png" alt="logo de la empresa">
+      <h1 class="empresa"> ÁTICO-DEV</h1>
+    </a>
+
+    <nav>
+      <a href="nosotros.html" class="nav-link">Nosotros</a>
+      <a href="contactanos.html" class="nav-link">Contactanos</a>
+      <a href="registro.html" class="nav-link-enlace">Registro de usuarios</a>
+    </nav>
+  </header>
+
+  <h2>Formulario de registro</h2>
+
+  <form class="registro" action="show_data.html">
+    <div>
+      <label for="nombre" class="registro-N-C-Ciu" >Nombre: </label><input size="30" type="text" name="nombre" required=""
+        placeholder="Ingrese su nombre...">
+      <label for="apellido" class="registro-N-C-Ciu">Apellido: </label><input size="30" type="text" name="apellido" required=""
+        placeholder="Ingrese su apellido..."> <br><br>
+      <label for="direccion" class="registro-N-C-Ciu">Calle: </label><input class="imput-registro-calle" size="30" type="text" name="direccion" required=""
+        placeholder="Ingrese la direccion...">
+      <label for="numero" class="registro-numero"> Numero:</label><input class="imput-registro-numero" size="15" type="number" name="numero" required=""
+        placeholder="Ingrese la altura..."><br><br>
+      <label for="ciudad" class="registro-N-C-Ciu">Ciudad: </label><input size="30" type="text" name="ciudad" required=""
+        placeholder="Ingrese la ciudad donde vive..."> <br><br>
+      <label for="fn" class="registro-N-C-Ciu">Fecha de nacimiento: </label><input size="30" type="date" name="fn"> <br><br>
+      <label for="correo" class="registro-N-C-Ciu">E-mail: </label><input size="30" type="email" name="email" required=""
+        placeholder="ingrese su correo electrónico...">
+      <label for="telefono" class="registro-N-C-Ciu" >Telefono: </label><input size="30" type="tel" name="telefono" required=""
+        placeholder="ingrese su telefono..."> <br>
+    </div>
+    <p>Género:
+      <input type="radio" name="genero" value="hombre"> Hombre
+      <input type="radio" name="genero" value="mujer"> Mujer
+      <input type="radio" name="genero" value="otro"> Otro
+    </p>
+    <div class="botones">
+      <input type="submit" value="Enviar formulario" class="boton-formulario"> <br>
+      <button type="reset" class="boton-formulario">Reset formulario</button>
+      </div>
+  </form><br>
+
+  <footer>
+    <div class="redes"><br>
+      <a href="https://www.facebook.com/" target="_blank" title="Facebook"><i
+          class="fa-brands fa-square-facebook"></i></a>
+      <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/atico_dev/" target="_blank" title="Instagram"><i
+          class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div id="copyright">
+      <p>Derechos reservados @Atico-Dev 2022</p>
+    </div>
+  </footer>
+</body>
+
+</html>
