@@ -1,0 +1,322 @@
+/* ================== custom property INICIO =============================== */
+:root {
+    --color-fuente: whitesmoke;
+    --color-fondo: rgba(0, 0, 0, 0.750);
+}
+
+/* ================== custom property FIN =============================== */
+
+/* ================== Header INICIO =============================== */
+header {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    color: whitesmoke;
+    background-color: var(--color-fondo)
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: rgb(18, 173, 135);
+    text-shadow: 0px 0px 20px rgb(18, 173, 135);
+}
+
+.nav-link-enlace {
+    border-bottom: 2px solid var(--color-fuente);
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo:hover {
+    transform: scale(1.07);
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+    opacity: 80%;
+    transition: all .2s ease-in-out;
+    border-radius: 50%;
+}
+
+.logo:hover img {
+    transform: rotate(3deg);
+}
+
+/* ================== Header FIN =============================== */
+
+/* ================== Fondo =============================== */
+body {
+   /*background:
+        linear-gradient(150deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.8)),
+        url(../images/fondo.webp);
+    background-image: no-repeat center fixed; */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, grey, black, rgb(18, 173, 135) );
+    background-size: 400% 400%;
+    font-family: sans-serif;
+    margin: 0;
+    color: white;
+    position: relative;
+    animation: fondomov 10s ease infinite;
+}
+@keyframes fondomov{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+/* ================== Fondo FIN =============================== */
+
+/* ================== TITULOS =============================== */
+h2 {
+    background-color: var(--color-fondo);
+}
+
+h3 {
+    font-size: xx-large;
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color-fondo);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.atico-titulo {
+    width: 35%;
+
+}
+
+.atico-titulo-2 {
+    width: 70%;
+}
+
+.atico-titulo-3 {
+    width: 70%;
+}
+
+
+
+/* ================== TITULOS fin =============================== */
+
+
+/* ================== TITULOS INICIO CONTACTANOS =============================== */
+
+.titulo-ubicacion {
+    width: 40%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    background: none;
+
+}
+
+
+
+/* ================== TITULOS fin =============================== */
+
+/* ================== productos INICIO =============================== */
+menu {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color-fondo);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.menu__titulo {
+    font-size: 25px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.menu__table {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color-fondo);
+    border-radius: 20px;
+    text-align: center;
+    border-style: inset;
+}
+
+table th {
+    border-style: inset;
+    border-radius: 20px;
+}
+
+table td {
+    border-style:inset;
+    border-radius: 20px;
+}
+
+.menu__tr {
+    width: 30%;
+
+}
+
+.imagen {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+/* ================== productos FIN =============================== */
+
+/* ================== contenido de nosotros =============================== */
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contenido img {
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.contenido p {
+    text-align: center;
+    margin: 0%;
+    font-size: x-large;
+}
+.consulta-text {
+    resize: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgb(18, 173, 135);
+    color: aliceblue;
+    margin: 14px;
+    
+}
+
+.consulta-text-2{
+    resize: none;
+    background: none;
+    color: aliceblue;
+
+    
+}
+.envia-consulta{
+    margin-top: 8%;
+    background: none;
+}
+
+
+
+.boton-formulario {
+    text-align: center;
+    margin: 1%;
+    margin-left: 8%;
+    background: none;
+    border: none;
+    color: aliceblue;
+    border: 1px solid rgb(18, 173, 135);
+}
+
+.boton-formulario:hover {
+    color: rgb(18, 173, 135);
+}
+
+/* ================== contenido de nosotros fin=============================== */
+
+/* ================== form estilos =============================== */
+.registro {
+    background-color: var(--color-fondo);
+    text-align: left;
+
+}
+
+.registro input {
+    text-align: center;
+    margin: 1%;
+    margin-left: 8%;
+    background: none;
+    border: none;
+    color: aliceblue;
+    border-bottom: 1px solid rgb(18, 173, 135);
+    
+}
+
+.botones {
+    text-align: center;
+    
+}
+
+
+textarea {
+    font-family: sans-serif;
+}
+
+.registro-N-C-Ciu {
+    position: relative;
+    left: 8%;
+}
+.registro-numero{
+    position: relative;
+    left: 9%;
+
+}
+
+
+.imput-registro-numero {
+    position: relative;
+    left: 2%;
+}
+
+.imput-registro-calle {
+    position: relative;
+    left: 20px;
+}
+
+/* ================== form estilos fin =============================== */
+
+/* ================== Footer =============================== */
+footer {
+    background-color: var(--color-fondo);
+    text-align: center;
+    font-weight: 600;
+}
+
+.redes a i {
+    margin-right: 1.25rem;
+    font-size: 1.875em;
+    color: var(--color-fuente);
+    transition: all 1s linear 0.5s;
+}
+
+.redes a i:hover {
+    color: rgb(18, 173, 135);
+    transform: scale(1.3);
+    transition: all 1s linear 0.1s;
+}
+
+#copyright {
+    font-weight: 700;
+}
+
+/* ================== Footer =============================== */
